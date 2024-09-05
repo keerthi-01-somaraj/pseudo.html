@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Pseudo class</title>
+    <style>
+        div{
+            background-color: rgb(119, 101, 136);
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+          
+        }
+        div:hover{
+            background-color: rgb(206, 102, 133);
+            width: 400px;
+            color: rgb(14, 73, 73);
+        }
+       
+
+        p:hover{
+            
+            background-color: rgb(58, 212, 205);
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        h2{
+            background-color: rgb(56, 196, 102);
+        }
+        h2 :first-child{
+            color: rgb(158, 92, 37);
+        }
+
+        h3::first-letter{
+            color: rgb(25, 180, 64);
+            text-align: center;
+        }
+        .A ::first-line{
+            color: white;
+            text-transform: uppercase;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            line-height: normal;
+        }
+
+        H3::before{
+            content: counter(a );
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>classes</h1>
+    <div>Click here</div>
+    <P>Welcome </P>
+
+    <h2>Welcome to the zone</h2>
+    <h3>Pseudo elements</h3>
+
+    <div class="A"><P>Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. User experience is central to the web designing process. Websites have an array of elements presented in ways that make them easy to navigate.</P></div>
+</body>
+</html>
